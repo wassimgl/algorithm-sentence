@@ -1,0 +1,29 @@
+ALGORITHM  sentence 
+VAR
+str = STRING;
+nombre voyale= INTEGER ;
+nombre mots= INTEGER;
+c= 'CHAR';
+nbw=1;
+nbv=0;
+nbc=0;
+BEGIN
+REPEAT
+    read (c)
+    IF ((c) in ('a','e','i','o','u','y','A','E','I','O','U','Y')) THEN
+        nbv= nbv+1;
+    END_IF 
+    IF (c='') THEN
+    nbw=nbw+1;
+    ELSE
+    nbc= nbc+1;    
+    END_IF
+str= str+c;
+UNTIL (c ='.');
+write('str');
+write('nbv');
+write('nbr');
+write('nbc');
+END
+
+
